@@ -9,7 +9,7 @@ Aaron Suen</title><link rel="stylesheet" href="style.css" type="text/css" /><lin
 <div class="logo"><img class="logo" src="title-center.png" alt= "Aaron Suen: The Official Website" /></div><a name="top" id="top"></a>
 <ul class="nav bar ng-cloak"><li data-ng-repeat= "nav in data.pages | warrValues | filter:{order:''} | orderBy:['order','key']">
 <strong data-ng-if="nav.key == routePage.key" data-ng-bind-html= "html(nav.name)">&#160;</strong><a data-ng-if= 
-"nav.key != routePage.key" data-ng-href="#{{nav.routes[0]}}" data-ng-bind-html="html(nav.name)"></a></li></ul></div><div class="content"><div data-ng-view="">
+"nav.key != routePage.key" data-ng-href="#{{nav.route}}" data-ng-bind-html="html(nav.name)"></a></li></ul></div><div class="content"><div data-ng-view="">
 <h3 class="center">Sorry, Javascript is required to browse this site.</h3></div></div><div class="content footer">
 <div class="legal">Copyright &#169;2015 Aaron Suen, <a href= "http://opensource.org/licenses/MIT" data-ng-href= "#/license">License</a></div>
 <div class="right" data-ng-cloak="" data-ng-if="appVersion" data-ng-bind="'Version ' + appVersion"></div></div>
